@@ -1,15 +1,16 @@
 // Given a list of n integers print two numbers before and after a specific integer occurrence 
 // Ex - {1,3,5,6,8,9,7,6,2,0,4,6}
-using System.Collections.Generic;
-using leetcode;
 
-namespace geeksforgeeks
+using System.Collections.Generic;
+using algo.problems.common;
+
+namespace algo.problems._450dsa.arrays
 {
     public class NeighbouringNumbers : IProblem
     {
         public void Run()
         {
-            var input = new int[] { 1, 3, 5, 6, 8, 9, 7, 6, 2, 0, 4, 6 };
+            var input = new[] { 1, 3, 5, 6, 8, 9, 7, 6, 2, 0, 4, 6 };
             GetNeighbors(input, 6).Dump();
         }
 

@@ -1,7 +1,6 @@
-using System;
-using leetcode;
+using algo.problems.common;
 
-namespace geeksforgeeks
+namespace algo.problems._450dsa.arrays
 {
     /// <summary>
     /// geeksforgeeks.org/move-negative-numbers-beginning-positive-end-constant-extra-space/
@@ -10,7 +9,7 @@ namespace geeksforgeeks
     {
         public void Run()
         {
-            var input = new int[] { -12, 11, -13, -5, 6, -7, 5, -3, -6 };
+            var input = new[] { -12, 11, -13, -5, 6, -7, 5, -3, -6 };
             ReArrange(input);
             input.Dump();
         }

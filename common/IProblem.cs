@@ -1,4 +1,4 @@
-namespace leetcode
+namespace algo.problems.common
 {
     public interface IProblem
     {

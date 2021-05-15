@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
+using algo.problems.common;
 
-namespace leetcode
+namespace algo.problems.leetcode
 {
     /// <summary>
     /// https://leetcode.com/problems/3sum/
@@ -12,8 +13,8 @@ namespace leetcode
     {
         public void Run()
         {
-            this.GetType().Name.Dump();
-            var input = new int[] { -4, -1, -1, 0, 1, 2 };
+            GetType().Name.Dump();
+            var input = new[] { -4, -1, -1, 0, 1, 2 };
             Solution(input).Dump();
         }
 

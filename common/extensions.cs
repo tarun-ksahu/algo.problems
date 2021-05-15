@@ -1,27 +1,31 @@
 using System.Collections;
-public static class Extensions
+
+namespace algo.problems.common
 {
-    public static void Dump(this object input, bool newline = true)
+    public static class Extensions
     {
-        if (input is IEnumerable && input is not string)
+        public static void Dump(this object input, bool newline = true)
         {
-            foreach (var item in (IEnumerable)input)
+            if (input is IEnumerable && input is not string)
             {
-                Dump(item, false);
-                System.Console.Write(" ");
+                foreach (var item in (IEnumerable)input)
+                {
+                    Dump(item, false);
+                    System.Console.Write(" ");
+                }
+                System.Console.Write("  ");
             }
-            System.Console.Write("  ");
+            else
+            {
+                if (newline) System.Console.WriteLine(input);
+                else System.Console.Write(input);
+            }
         }
-        else
+        public static void Swap(this int[] input, int start, int mid)
         {
-            if (newline) System.Console.WriteLine(input);
-            else System.Console.Write(input);
+            int temp = input[start];
+            input[start] = input[mid];
+            input[mid] = temp;
         }
-    }
-    public static void Swap(this int[] input, int start, int mid)
-    {
-        int temp = input[start];
-        input[start] = input[mid];
-        input[mid] = temp;
     }
 }

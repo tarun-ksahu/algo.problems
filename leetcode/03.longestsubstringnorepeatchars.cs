@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
+using algo.problems.common;
 
-namespace leetcode
+namespace algo.problems.leetcode
 {
     /// <summary>
     /// https://leetcode.com/problems/longest-substring-without-repeating-characters/
@@ -11,7 +11,7 @@ namespace leetcode
     {
         public void Run()
         {
-            this.GetType().Name.Dump();
+            GetType().Name.Dump();
             var input = "abcdaghjk";
             var maxlength = Solution(input);
             maxlength.Dump();

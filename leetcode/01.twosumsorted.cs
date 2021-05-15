@@ -1,8 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using algo.problems.common;
 
-namespace leetcode
+namespace algo.problems.leetcode
 {
     /// <summary>
     /// https://leetcode.com/problems/two-sum/
@@ -11,7 +9,7 @@ namespace leetcode
     {
         public void Run()
         {
-            this.GetType().Name.Dump();
+            GetType().Name.Dump();
             var input = new[] { 1, 3, 4, 5, 8, 13, 21 };
             var indexes = GetTwoSumIndexes(input, 13);
             indexes.Dump();
@@ -23,7 +21,7 @@ namespace leetcode
             while (low < high)
             {
                 if (input[low] + input[high] == sum)
-                    return new int[] { low, high };
+                    return new[] { low, high };
                 if (input[low] + input[high] > sum)
                     high--;
                 else

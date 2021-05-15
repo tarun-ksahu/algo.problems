@@ -1,7 +1,7 @@
 using System;
-using leetcode;
+using algo.problems.common;
 
-namespace geeksforgeeks
+namespace algo.problems._450dsa.arrays
 {
     /// <summary>
     /// https://practice.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1
@@ -10,7 +10,7 @@ namespace geeksforgeeks
     {
         public void Run()
         {
-            var input = new int[] { -1, -2, -3, -4 };
+            var input = new[] { -1, -2, -3, -4 };
             GetMaxSum(input).Dump();
         }
 

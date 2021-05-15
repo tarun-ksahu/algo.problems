@@ -1,4 +1,6 @@
-namespace leetcode
+using algo.problems.common;
+
+namespace algo.problems.leetcode
 {
     /// <summary>
     /// https://leetcode.com/problems/palindrome-number/
@@ -7,7 +9,7 @@ namespace leetcode
     {
         public void Run()
         {
-            this.GetType().Name.Dump();
+            GetType().Name.Dump();
             var input = 1234321;
             (Reverse(input) == input).Dump();
         }

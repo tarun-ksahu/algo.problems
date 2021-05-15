@@ -1,14 +1,13 @@
-using System;
-using leetcode;
+using algo.problems.common;
 
-namespace basics
+namespace algo.problems.basics
 {
-    public class Fibbonacci : IProblem
+    public class Fibonacci : IProblem
     {
         public void Run()
         {
             GetNthFibonacci(10).Dump();
-            GetNthFibonacci(10).Dump();
+            GetNthFibonacciRecursive(10).Dump();
         }
 
         private int GetNthFibonacci(int index)

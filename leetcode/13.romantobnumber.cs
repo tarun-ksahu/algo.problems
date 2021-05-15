@@ -1,4 +1,6 @@
-namespace leetcode
+using algo.problems.common;
+
+namespace algo.problems.leetcode
 {
     /// <summary>
     /// https://leetcode.com/problems/roman-to-integer/
@@ -7,7 +9,7 @@ namespace leetcode
     {
         public void Run()
         {
-            this.GetType().Name.Dump();
+            GetType().Name.Dump();
             var input = "MCMXCIV";
             GetIntFromRoman(input).Dump();
         }

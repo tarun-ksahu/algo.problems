@@ -1,7 +1,6 @@
-using System;
-using leetcode;
+using algo.problems.common;
 
-namespace geeksforgeeks
+namespace algo.problems._450dsa.arrays
 {
     /// <summary>
     /// https://practice.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1
@@ -11,7 +10,7 @@ namespace geeksforgeeks
         public void Run()
         {
             // var input = new int[] { 0, 2, 1, 2, 0 };
-            var input = new int[] { 1, 2, 1, 0, 1, 0, 0, 2, 1, 2, 0 };
+            var input = new[] { 1, 2, 1, 0, 1, 0, 0, 2, 1, 2, 0 };
             Sort(input);
             input.Dump();
         }
