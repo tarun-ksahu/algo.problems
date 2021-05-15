@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-
 public static class Extensions
 {
     public static void Dump(this object input, bool newline = true)
@@ -19,5 +17,11 @@ public static class Extensions
             if (newline) System.Console.WriteLine(input);
             else System.Console.Write(input);
         }
+    }
+    public static void Swap(this int[] input, int start, int mid)
+    {
+        int temp = input[start];
+        input[start] = input[mid];
+        input[mid] = temp;
     }
 }

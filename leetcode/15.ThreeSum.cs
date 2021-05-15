@@ -5,13 +5,15 @@ namespace leetcode
 {
     /// <summary>
     /// https://leetcode.com/problems/3sum/
+    /// This solution uses the 2sum solution. We first sort the array and then for each number, try to find another
+    /// pair to the right of it, that produces 0 - current item value.
     /// </summary>
     public class ThreeSum : IProblem
     {
         public void Run()
         {
             this.GetType().Name.Dump();
-            var input = new int[] { 1,2,-2,-1 };
+            var input = new int[] { -4, -1, -1, 0, 1, 2 };
             Solution(input).Dump();
         }
 
@@ -29,6 +31,8 @@ namespace leetcode
                         if (input[low] + input[high] == 0 - input[i])
                         {
                             result.Add(new List<int>() { input[i], input[low], input[high] });
+
+                            // skip duplicates
                             while (low < high && input[low] == input[low + 1])
                                 low++;
                             while (low < high && input[high] == input[high - 1])

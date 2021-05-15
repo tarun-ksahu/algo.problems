@@ -1,5 +1,6 @@
-﻿using System;
+﻿using basics;
 using leetcode;
+using geeksforgeeks;
 
 namespace algo.problems
 {
@@ -14,6 +15,16 @@ namespace algo.problems
         private static IProblem GetProblem()
         {
             IProblem problem;
+
+            #region basics
+            // problem = new Fibbonacci();
+            #region sorts
+            #endregion
+
+            #region search
+            #endregion
+            #endregion
+
             #region leetcode
             #region 1. twosum
             // problem = new TwoSum();
@@ -33,13 +44,17 @@ namespace algo.problems
             #region 9. Roman To Number
             // problem = new RomanToNumber();
             #endregion
-            #region 9. Roman To Number
-            problem = new ThreeSum();
+            #region 15. three sum
+            // problem = new ThreeSum();
             #endregion
             #endregion
 
             #region geeksforgeeks
-
+            // problem = new Sort012Array();
+            // problem = new MoveNegativesToLeft();
+            // problem = new MaxContigousArray();
+            // problem = new NeighbouringNumbers();
+            problem = new LongestConsecutiveSubsequence();
             #endregion
             return problem;
         }
