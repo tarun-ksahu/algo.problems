@@ -19,8 +19,8 @@ namespace algo.problems._450dsa.arrays
         private object GetLongestSequenceCount(int[] input)
         {
             Array.Sort(input);
-            int max = 1;
-            int current = 1;
+            var max = 1;
+            var current = 1;
             for (var i = 1; i < input.Length; i++)
             {
                 if (input[i] - input[i - 1] == 1)

@@ -16,8 +16,8 @@ namespace algo.problems.leetcode
 
         private int GetIntFromRoman(string input)
         {
-            int num = 0;
-            char prev = '0';
+            var num = 0;
+            var prev = '0';
             for (var i = 0; i < input.Length; i++)
             {
                 switch (input[i])

@@ -1,3 +1,4 @@
+using System;
 using algo.problems.common;
 
 namespace algo.problems._450dsa.arrays
@@ -9,8 +10,8 @@ namespace algo.problems._450dsa.arrays
     {
         public void Run()
         {
-            var input1 = new[] {1, 3, 5, 7};
-            var input2 = new[] {0, 2, 6, 8, 9};
+            var input1 = new[] {4, 6, 9, 15};
+            var input2 = new[] {0, 1, 2, 3};
             MergeArrays(input1, input2);
             input1.Dump();
             input2.Dump();
@@ -18,22 +19,23 @@ namespace algo.problems._450dsa.arrays
 
         private void MergeArrays(int[] input1, int[] input2)
         {
-            int i = 0, j = 0;
+            int i = input1.Length - 1, j = 0;
             // move smaller items in second array to first, and keep sorting using insertion sort
-            while (i < input1.Length && j < input2.Length)
+            while (i >= 0 && j < input2.Length)
             {
-                if (input1[i] <= input2[j]) continue;
+                if (input1[i] <= input2[j]) break;
 
                 var temp = input2[j];
                 input2[j] = input1[i];
                 input1[i] = temp;
-                InsertionSort(input1);
-                InsertionSort(input2);
-                i++;
+                i--;
+                j++;
             }
+            Array.Sort(input1);
+            Array.Sort(input2);
         }
 
-        private void InsertionSort(int[] input)
+        private void Sort(int[] input)
         {
             for (var i = 1; i < input.Length; i++)
             {

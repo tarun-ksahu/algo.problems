@@ -6,9 +6,9 @@ namespace algo.problems.common
     {
         public static void Dump(this object input, bool newline = true)
         {
-            if (input is IEnumerable && input is not string)
+            if (input is IEnumerable enumerable and not string)
             {
-                foreach (var item in (IEnumerable)input)
+                foreach (var item in enumerable)
                 {
                     Dump(item, false);
                     System.Console.Write(" ");
@@ -23,7 +23,7 @@ namespace algo.problems.common
         }
         public static void Swap(this int[] input, int start, int mid)
         {
-            int temp = input[start];
+            var temp = input[start];
             input[start] = input[mid];
             input[mid] = temp;
         }

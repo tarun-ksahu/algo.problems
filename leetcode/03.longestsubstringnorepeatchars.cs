@@ -19,10 +19,10 @@ namespace algo.problems.leetcode
 
         private int Solution(string input)
         {
-            int start = 0;
-            int seeker = 0;
-            int max = 0;
-            HashSet<char> set = new HashSet<char>();
+            var start = 0;
+            var seeker = 0;
+            var max = 0;
+            var set = new HashSet<char>();
             while(seeker < input.Length)
             {
                 if (set.Contains(input[seeker]))
