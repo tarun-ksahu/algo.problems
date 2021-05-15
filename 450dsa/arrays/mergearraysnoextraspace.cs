@@ -1,4 +1,3 @@
-using System;
 using algo.problems.common;
 
 namespace algo.problems._450dsa.arrays
