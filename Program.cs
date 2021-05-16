@@ -1,5 +1,6 @@
 ﻿using algo.problems._450dsa.arrays;
 using algo.problems.common;
+using geeksforgeeks;
 
 namespace algo.problems
 {
@@ -51,10 +52,12 @@ namespace algo.problems
             #region geeksforgeeks
             // problem = new Sort012Array();
             // problem = new MoveNegativesToLeft();
-            // problem = new MaxContigousArray();
+            // problem = new MaxContiguousArray();
             // problem = new NeighbouringNumbers();
             // problem = new LongestConsecutiveSubsequence();
-            problem = new MergeSortedArraysWithoutExtraSpace();
+            // problem = new MergeSortedArraysWithoutExtraSpace();
+            // problem = new DuplicateNumber();
+            problem = new MinMax();
             #endregion
             return problem;
         }

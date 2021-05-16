@@ -6,7 +6,7 @@ namespace algo.problems._450dsa.arrays
     /// <summary>
     /// https://practice.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1
     /// </summary>
-    public class MaxContigousArray : IProblem
+    public class MaxContiguousArray : IProblem
     {
         public void Run()
         {
