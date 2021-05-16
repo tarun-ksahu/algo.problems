@@ -7,7 +7,7 @@ namespace algo.problems.leetcode
     /// <summary>
     /// https://leetcode.com/problems/longest-substring-without-repeating-characters/
     /// </summary>
-    public class LongestSubstringNoRepeadedChars : IProblem
+    public class LongestSubstringNoRepeatedChars : IProblem
     {
         public void Run()
         {
