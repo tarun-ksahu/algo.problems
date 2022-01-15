@@ -10,6 +10,7 @@ namespace algo.problems._450dsa.arrays
     {
         public void Run()
         {
+            GetType().Name.Dump();
             var input = new[]
             {
                 1,3,4,2,2

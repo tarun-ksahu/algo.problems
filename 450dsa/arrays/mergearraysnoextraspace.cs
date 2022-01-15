@@ -10,6 +10,7 @@ namespace algo.problems._450dsa.arrays
     {
         public void Run()
         {
+            GetType().Name.Dump();
             var input1 = new[] {4, 6, 9, 15};
             var input2 = new[] {0, 1, 2, 3};
             MergeArrays(input1, input2);

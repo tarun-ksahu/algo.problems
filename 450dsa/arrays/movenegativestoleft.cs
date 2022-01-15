@@ -9,6 +9,7 @@ namespace algo.problems._450dsa.arrays
     {
         public void Run()
         {
+            GetType().Name.Dump();
             var input = new[] { -12, 11, -13, -5, 6, -7, 5, -3, -6 };
             ReArrange(input);
             input.Dump();

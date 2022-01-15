@@ -10,6 +10,7 @@ namespace algo.problems._450dsa.arrays
     {
         public void Run()
         {
+            GetType().Name.Dump();
             var input = new[] { 1, 3, 5, 6, 8, 9, 7, 6, 2, 0, 4, 6 };
             GetNeighbors(input, 6).Dump();
         }

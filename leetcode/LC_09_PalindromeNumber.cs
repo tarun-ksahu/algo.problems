@@ -5,7 +5,7 @@ namespace algo.problems.leetcode
     /// <summary>
     /// https://leetcode.com/problems/palindrome-number/
     /// </summary>
-    public class PalindromeNumber : IProblem
+    public class LC_09_PalindromeNumber : IProblem
     {
         public void Run()
         {

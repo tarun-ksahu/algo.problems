@@ -5,7 +5,7 @@ namespace algo.problems.leetcode
     /// <summary>
     /// https://leetcode.com/problems/reverse-integer
     /// </summary>
-    public class ReverseInteger : IProblem
+    public class LC_07_ReverseInteger : IProblem
     {
         public void Run()
         {

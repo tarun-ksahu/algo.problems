@@ -1,5 +1,4 @@
-﻿using System;
-using algo.problems.common;
+﻿using algo.problems.common;
 
 namespace algo.problems.basics
 {
@@ -7,6 +6,7 @@ namespace algo.problems.basics
     {
         public void Run()
         {
+            GetType().Name.Dump();
             var input = new[] {1, 25, 12, 45, 78, 96, 15, 19, 26, 38, 75};
             Sort(input, 0, input.Length);
             input.Dump();

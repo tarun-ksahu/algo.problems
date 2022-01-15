@@ -5,7 +5,7 @@ namespace algo.problems.leetcode
     /// <summary>
     /// https://leetcode.com/problems/roman-to-integer/
     /// </summary>
-    public class RomanToNumber : IProblem
+    public class LC_13_RomanToNumber : IProblem
     {
         public void Run()
         {

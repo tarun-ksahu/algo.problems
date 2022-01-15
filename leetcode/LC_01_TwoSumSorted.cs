@@ -5,7 +5,7 @@ namespace algo.problems.leetcode
     /// <summary>
     /// https://leetcode.com/problems/two-sum/
     /// </summary>
-    public class TwoSumSorted : IProblem
+    public class LC_01_TwoSumSorted : IProblem
     {
         public void Run()
         {

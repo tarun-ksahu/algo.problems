@@ -9,6 +9,7 @@ namespace algo.problems._450dsa.arrays
     {
         public void Run()
         {
+            GetType().Name.Dump();
             // var input = new int[] { 0, 2, 1, 2, 0 };
             var input = new[] { 1, 2, 1, 0, 1, 0, 0, 2, 1, 2, 0 };
             Sort(input);

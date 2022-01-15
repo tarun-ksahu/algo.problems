@@ -6,6 +6,7 @@ namespace algo.problems.basics
     {
         public void Run()
         {
+            GetType().Name.Dump();
             var input = new[] {1, 5, 7, 8, 10};
             // Search(input, 5).Dump();
             SearchRecursive(input, 10, 0, input.Length).Dump();

@@ -9,6 +9,7 @@ namespace algo.problems._450dsa.arrays
     {
         public void Run()
         {
+            GetType().Name.Dump();
             var input = new[] {3, 9, 12, 16, 20};
             Minimize(input);
             input.Dump();

@@ -21,11 +21,11 @@ namespace algo.problems.common
                 else System.Console.Write(input);
             }
         }
-        public static void Swap(this int[] input, int start, int mid)
+        public static void Swap(this int[] input, int index1, int index2)
         {
-            var temp = input[start];
-            input[start] = input[mid];
-            input[mid] = temp;
+            var temp = input[index1];
+            input[index1] = input[index2];
+            input[index2] = temp;
         }
     }
 }

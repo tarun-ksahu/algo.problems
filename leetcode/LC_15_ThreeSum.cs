@@ -9,7 +9,7 @@ namespace algo.problems.leetcode
     /// This solution uses the 2sum solution. We first sort the array and then for each number, try to find another
     /// pair to the right of it, that produces 0 - current item value.
     /// </summary>
-    public class ThreeSum : IProblem
+    public class LC_15_ThreeSum : IProblem
     {
         public void Run()
         {

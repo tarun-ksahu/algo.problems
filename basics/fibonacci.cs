@@ -6,7 +6,8 @@ namespace algo.problems.basics
     {
         public void Run()
         {
-            GetNthFibonacci(10).Dump();
+            GetType().Name.Dump();
+            // GetNthFibonacci(10).Dump();
             GetNthFibonacciRecursive(10).Dump();
         }
 
@@ -28,7 +29,7 @@ namespace algo.problems.basics
 
         private int GetNthFibonacciRecursive(int index)
         {
-            if(index == 0) return 0;
+            if(index <= 1) return 1;
             return GetNthFibonacciRecursive(index - 1) + GetNthFibonacciRecursive(index - 2);
         }
     }

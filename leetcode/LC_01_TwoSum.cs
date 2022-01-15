@@ -6,7 +6,7 @@ namespace algo.problems.leetcode
     /// <summary>
     /// https://leetcode.com/problems/two-sum/
     /// </summary>
-    public class TwoSum : IProblem
+    public class LC_01_TwoSum : IProblem
     {
         public void Run()
         {

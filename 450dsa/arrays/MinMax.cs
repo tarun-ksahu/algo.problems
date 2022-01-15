@@ -10,6 +10,7 @@ namespace geeksforgeeks
     {
         public void Run()
         {
+            GetType().Name.Dump();
             var input = new[] {100, 33, 234, 45, 698, 567, 345};
             var (min, max) = GetMinMax(input);
             min.Dump();
